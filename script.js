@@ -7,7 +7,7 @@ const catalogData = {
             icon: '💳',
             description: 'Diversos modelos de cartões de visita personalizados',
             products: [
-                { name: 'Cartão Standard', description: 'Papel couchê 300g, cores 4x0', price: 'R$ 50,00/100un', image: 'img/cartao-standard.jpg' },
+                { name: 'Cartão Standard', description: 'Papel couchê 300g, cores 4x0', price: 'R$ 50,00/100un', image: 'img/teste.png' },
                 { name: 'Cartão Premium', description: 'Papel supremo 300g, verniz localized', price: 'R$ 80,00/100un', image: 'img/cartao-premium.jpg' },
                 { name: 'Cartão Luxo', description: 'Papel metalizado, hotstamp dourado', price: 'R$ 150,00/100un', image: 'img/cartao-luxo.jpg' },
                 { name: 'Cartão Reciclado', description: 'Papel 100% reciclado, visual eco', price: 'R$ 70,00/100un', image: 'img/cartao-reciclado.jpg' }
