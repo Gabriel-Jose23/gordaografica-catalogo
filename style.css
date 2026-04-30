@@ -23,6 +23,8 @@
     --primary: #181818; /* preto escuro */
     --secondary: #ff9800; /* laranja */
     --accent: #ffd600; /* amarelo */
+    --header-gradient: #ffd600; /* cor do degradê do header */
+    --price-color: #ffd600; /* cor do preço */
     --light: #fff8e1;
     --dark: #181818;
     --text: #222;
@@ -44,7 +46,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, var(--primary) 60%, var(--secondary) 90%, var(--accent) 100%);
+    background: linear-gradient(135deg, var(--primary) 60%, var(--secondary) 90%, var(--header-gradient) 100%);
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -193,7 +195,7 @@ header p {
 }
 
 .product-info .price {
-    color: var(--accent);
+    color: var(--price-color);
     font-size: 1.3rem;
     font-weight: bold;
 }
