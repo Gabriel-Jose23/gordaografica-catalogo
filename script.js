@@ -24,12 +24,12 @@ const catalogData = {
             icon: '☕',
             description: 'Sublimações em geral',
             products: [
-                { name: 'Caneca sublimada cerâmica', description: '', price: 'R$ 24,99/un', image: 'img/teste.png' },
-                { name: 'Caneca sublimada + arte', description: '', price: 'R$ 29,99/un', image: 'img/teste.png' },
-                { name: 'Azulejo 10×10 sublimado', description: '', price: 'R$ 14,99/un', image: 'img/teste.png' },
-                { name: 'Azulejo 20×20 sublimado', description: '', price: 'R$ 21,99', image: 'img/teste.png' },
-                { name: 'Azulejo 20×30 sublimado', description: '', price: 'R$ 34,99', image: 'img/teste.png' },
-                { name: 'Placa de metal 20×28 sublimada', description: '', price: 'R$ 34,99', image: 'img/teste.png' }
+                { name: 'Caneca sublimada cerâmica', description: '', price: 'R$ 24,99/un', image: 'img/canecassublimadas.png' },
+                { name: 'Caneca sublimada + arte', description: '', price: 'R$ 29,99/un', image: 'img/canecassublimadasarte.png' },
+                { name: 'Azulejo 10×10 sublimado', description: '', price: 'R$ 14,99/un', image: 'img/azulejo10x10.jpeg' },
+                { name: 'Azulejo 20×20 sublimado', description: '', price: 'R$ 21,99', image: 'img/azulejo20x20.png' },
+                { name: 'Azulejo 20×30 sublimado', description: '', price: 'R$ 34,99', image: 'img/azulejo20x30.png' },
+                { name: 'Placa de metal 20×28 sublimada', description: '', price: 'R$ 34,99', image: 'img/placademetalsublimada.png' }
             ]
         },
         {
@@ -38,11 +38,11 @@ const catalogData = {
             icon: '️📷',
             description: 'Eternize memórias.',
             products: [
-                { name: 'Foto 20×27 1 UN', description: '', price: 'R$ 9,99', image: 'img/teste.png' },
-                { name: 'Foto 14×20 2 UN', description: '', price: 'R$ 9,99', image: 'img/teste.png' },
-                { name: 'Foto 14×10 4 UN', description: '', price: 'R$ 9,99', image: 'img/teste.png' },
-                { name: 'Fotos polaroides 6 UN', description: '', price: 'R$ 11,99', image: 'img/teste.png' },
-                { name: 'Fotos polaroides 12 UN mini', description: '', price: 'R$ 11,99', image: 'img/teste.png' }
+                { name: 'Foto 20×27 1 UN', description: '', price: 'R$ 9,99', image: 'img/foto1un.png' },
+                { name: 'Foto 14×20 2 UN', description: '', price: 'R$ 9,99', image: 'img/foto2un.png' },
+                { name: 'Foto 14×10 4 UN', description: '', price: 'R$ 9,99', image: 'img/foto4un.png' },
+                { name: 'Fotos polaroides 6 UN', description: '', price: 'R$ 11,99', image: 'img/fotopol6un.png' },
+                { name: 'Fotos polaroides 12 UN mini', description: '', price: 'R$ 11,99', image: 'img/fotopol12unmini.png' }
             ]
         },
         {
