@@ -3,57 +3,70 @@ const catalogData = {
     sessions: [
         {
             id: 'cartoes',
-            name: 'Cartões de Visita',
-            icon: '💳',
-            description: 'Diversos modelos de cartões de visita personalizados',
+            name: 'Panfletos / Cartões',
+            icon: '📄💳',
+            description: 'Produtos para divulgação rápida.',
             products: [
-                { name: 'Cartão Standard', description: 'Papel couchê 300g, cores 4x0', price: 'R$ 50,00/100un', image: 'img/teste.png' },
-                { name: 'Cartão Premium', description: 'Papel supremo 300g, verniz localized', price: 'R$ 80,00/100un', image: 'img/cartao-premium.jpg' },
-                { name: 'Cartão Luxo', description: 'Papel metalizado, hotstamp dourado', price: 'R$ 150,00/100un', image: 'img/cartao-luxo.jpg' },
-                { name: 'Cartão Reciclado', description: 'Papel 100% reciclado, visual eco', price: 'R$ 70,00/100un', image: 'img/cartao-reciclado.jpg' }
+                { name: 'Panfletos 10×14', description: '1.000 UN', price: 'R$ 124,99/1000un', image: 'img/teste.png' },
+                { name: 'Panfletos 14×20', description: '1.000 UN', price: 'R$ 234,99/1000un', image: 'img/teste.png' },
+                { name: 'Panfletos 7×10', description: '5.000  UN', price: '169,99/5000un', image: 'img/teste.png' },
+                { name: 'Panfletos 10×14', description: '2.500 UN', price: 'R$ 129,99/2.500un', image: 'img/teste.png' },
+                { name: 'Panfletos 14×20', description: '2.500 UN', price: 'R$ 274,99/2.500un', image: 'img/teste.png' },
+                { name: 'Cartão de visita couchê 300g total frente', description: '500 UN', price: 'R$ 94,99/500un', image: 'img/teste.png' },
+                { name: 'Cartão de visita couchê 300g total frente', description: '1.000 UN', price: 'R$ 104,99/1.000un', image: 'img/teste.png' },
+                { name: 'Cartão de visita couchê 300g frente e verso laminação fosca', description: '500 UN', price: 'R$ 129,99/500un', image: 'img/teste.png' },
+                { name: 'Cartão de visita couchê 300g frente e verso laminação fosca', description: '1.000 UN', price: 'R$ 169,99/1.000un', image: 'img/teste.png' }
             ]
         },
         {
             id: 'folders',
-            name: 'Folders e Panfletos',
-            icon: '📄',
-            description: 'Material promocional em diversos formatos',
+            name: 'Sublimação',
+            icon: '☕',
+            description: 'Sublimações em geral',
             products: [
-                { name: 'Folder A4', description: 'Papel couchê 90g, dobra 1', price: 'R$ 0,30/un', image: 'img/folder-a4.jpg' },
-                { name: 'Folder A5', description: 'Papel couchê 115g, dobra 2', price: 'R$ 0,25/un', image: 'img/folder-a5.jpg' },
-                { name: 'Panfleto 1/4', description: 'Papel jornal 58g, cores 4x0', price: 'R$ 0,12/un', image: 'img/panfleto-1-4.jpg' },
-                { name: 'Flyer Quadrado', description: '15x15cm, papel couchê 150g', price: 'R$ 0,40/un', image: 'img/flyer-quadrado.jpg' }
+                { name: 'Caneca sublimada cerâmica', description: '', price: 'R$ 24,99/un', image: 'img/teste.png' },
+                { name: 'Caneca sublimada + arte', description: '', price: 'R$ 29,99/un', image: 'img/teste.png' },
+                { name: 'Azulejo 10×10 sublimado', description: '', price: 'R$ 14,99/un', image: 'img/teste.png' },
+                { name: 'Azulejo 20×20 sublimado', description: '', price: 'R$ 21,99', image: 'img/teste.png' },
+                { name: 'Azulejo 20×30 sublimado', description: '', price: 'R$ 34,99', image: 'img/teste.png' },
+                { name: 'Placa de metal 20×28 sublimada', description: '', price: 'R$ 34,99', image: 'img/teste.png' }
             ]
         },
         {
             id: 'banners',
-            name: 'Banners e Faixas',
-            icon: '️',
-            description: 'Material de grande formato para divulgação',
+            name: 'Fotos',
+            icon: '️📷',
+            description: 'Eternize memórias.',
             products: [
-                { name: 'Banner Lona', description: 'Lona 440g, ilhós a cada 50cm', price: 'R$ 45,00/m²', image: 'img/banner-lona.jpg' },
-                { name: 'Faixa de Rua', description: 'Lona front 300g, dupla face', price: 'R$ 55,00/m²', image: 'img/faixa-rua.jpg' },
-                { name: 'Rollup', description: '80x200cm, base metálica', price: 'R$ 180,00/un', image: 'img/rollup.jpg' },
-                { name: 'Banner Canvas', description: 'Tecido canvas, moldura alumíno', price: 'R$ 60,00/m²', image: 'img/banner-canvas.jpg' }
+                { name: 'Foto 20×27 1 UN', description: '', price: 'R$ 9,99', image: 'img/teste.png' },
+                { name: 'Foto 14×20 2 UN', description: '', price: 'R$ 9,99', image: 'img/teste.png' },
+                { name: 'Foto 14×10 4 UN', description: '', price: 'R$ 9,99', image: 'img/teste.png' },
+                { name: 'Fotos polaroides 6 UN', description: '', price: 'R$ 11,99', image: 'img/teste.png' },
+                { name: 'Fotos polaroides 12 UN mini', description: '', price: 'R$ 11,99', image: 'img/teste.png' }
             ]
         },
         {
             id: 'cadernos',
-            name: 'Cadernos Personalizados',
-            icon: '📓',
-            description: 'Cadernos e agendas com sua marca',
+            name: 'Banners/Faixas',
+            icon: '📃',
+            description: 'Comunicação visual',
             products: [
-                { name: 'Caderno A5', description: 'Capa dura, 100 páginas, espiral', price: 'R$ 12,00/un', image: 'img/caderno-a5.jpg' },
-                { name: 'Agenda Personalizada', description: 'Capa personalizada,ano', price: 'R$ 25,00/un', image: 'img/agenda-personalizada.jpg' },
-                { name: 'Caderno Eco', description: 'Capa reciclada, miolo 80g', price: 'R$ 8,00/un', image: 'img/caderno-eco.jpg' },
-                { name: 'Bloco de Notas', description: 'A6, 50 folhas, colado', price: 'R$ 5,00/un', image: 'img/bloco-notas.jpg' }
+                { name: 'Banner 50×50', description: '', price: 'R$ 19,99/un', image: 'img/teste.png' },
+                { name: 'Banner 70×70', description: '', price: 'R$ 29,99/un', image: 'img/teste.png' },
+                { name: 'Banner 70×90', description: '', price: 'R$ 34,99/un', image: 'img/teste.png' },
+                { name: 'Banner 90×90', description: '', price: 'R$ 44,99/un', image: 'img/teste.png' },
+                { name: 'Banner 90×1,10', description: '', price: 'R$ 59,99/un', image: 'img/teste.png' },
+                { name: 'Banner 1,10×1,10', description: '', price: 'R$ 69,99/un', image: 'img/teste.png' },
+                { name: 'Banner 1,10×1,30', description: '', price: 'R$ 84,99/un', image: 'img/teste.png' },
+                { name: 'Banner 1,30×1,50', description: '', price: 'R$ 114,99/un', image: 'img/teste.png' },
+                { name: 'Banner tamanho personalizado', description: '', price: 'R$ 0,00 Consultar o valor no whatsapp', image: 'img/teste.png' }
             ]
         },
         {
             id: 'embalagens',
-            name: 'Embalagens',
+            name: 'Adesivos',
             icon: '📦',
-            description: 'Caixas e embalagens personalizadas',
+            description: 'Adesivos vinil',
             products: [
                 { name: 'Caixa Pequena', description: '10x10x5cm, papelão 300g', price: 'R$ 2,50/un', image: 'img/caixa-pequena.jpg' },
                 { name: 'Caixa Média', description: '20x15x10cm, papelão 400g', price: 'R$ 5,00/un', image: 'img/caixa-media.jpg' },
@@ -63,9 +76,57 @@ const catalogData = {
         },
         {
             id: 'serigrafia',
-            name: 'Serigrafia',
-            icon: '👕',
-            description: 'Estampas em tecidos e produtos',
+            name: 'Presentes personalizados casal',
+            icon: '💞',
+            description: 'Torne cada momento especial',
+            products: [
+                { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
+                { name: 'Boné Estampado', description: 'Silk 1 cor, frente', price: 'R$ 25,00/un', image: 'img/bone-estampado.jpg' },
+                { name: 'Caneca Personalizada', description: 'Sublimação, corescheia', price: 'R$ 22,00/un', image: 'img/caneca-personalizada.jpg' },
+                { name: 'Tecido Estampado', description: 'Silk metro, cotton', price: 'R$ 30,00/m', image: 'img/tecido-estampado.jpg' }
+            ]
+        },
+        {
+            id: 'serigrafia',
+            name: 'Cortadores/carimbos biscoito',
+            icon: '🍪',
+            description: 'Alavanque sua criatividade na cozinha',
+            products: [
+                { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
+                { name: 'Boné Estampado', description: 'Silk 1 cor, frente', price: 'R$ 25,00/un', image: 'img/bone-estampado.jpg' },
+                { name: 'Caneca Personalizada', description: 'Sublimação, corescheia', price: 'R$ 22,00/un', image: 'img/caneca-personalizada.jpg' },
+                { name: 'Tecido Estampado', description: 'Silk metro, cotton', price: 'R$ 30,00/m', image: 'img/tecido-estampado.jpg' }
+            ]
+        },
+        {
+            id: 'serigrafia',
+            name: 'Brindes personalizados',
+            icon: '🎁',
+            description: 'Brindes para todas as ocasiões',
+            products: [
+                { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
+                { name: 'Boné Estampado', description: 'Silk 1 cor, frente', price: 'R$ 25,00/un', image: 'img/bone-estampado.jpg' },
+                { name: 'Caneca Personalizada', description: 'Sublimação, corescheia', price: 'R$ 22,00/un', image: 'img/caneca-personalizada.jpg' },
+                { name: 'Tecido Estampado', description: 'Silk metro, cotton', price: 'R$ 30,00/m', image: 'img/tecido-estampado.jpg' }
+            ]
+        },
+        {
+            id: 'serigrafia',
+            name: 'Personalizados para festas',
+            icon: '🎉',
+            description: 'Personalizados completos',
+            products: [
+                { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
+                { name: 'Boné Estampado', description: 'Silk 1 cor, frente', price: 'R$ 25,00/un', image: 'img/bone-estampado.jpg' },
+                { name: 'Caneca Personalizada', description: 'Sublimação, corescheia', price: 'R$ 22,00/un', image: 'img/caneca-personalizada.jpg' },
+                { name: 'Tecido Estampado', description: 'Silk metro, cotton', price: 'R$ 30,00/m', image: 'img/tecido-estampado.jpg' }
+            ]
+        },
+        {
+            id: 'serigrafia',
+            name: 'Personalizados para Eventos',
+            icon: '✨',
+            description: 'Use a criatividade no seu evento',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
                 { name: 'Boné Estampado', description: 'Silk 1 cor, frente', price: 'R$ 25,00/un', image: 'img/bone-estampado.jpg' },
