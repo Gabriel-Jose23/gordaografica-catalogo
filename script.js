@@ -133,6 +133,26 @@ const catalogData = {
                 { name: 'Caneca Personalizada', description: 'Sublimação, corescheia', price: 'R$ 22,00/un', image: 'img/caneca-personalizada.jpg' },
                 { name: 'Tecido Estampado', description: 'Silk metro, cotton', price: 'R$ 30,00/m', image: 'img/tecido-estampado.jpg' }
             ]
+        },
+        {
+            id: 'graficarapida',
+            name: 'Serviços Gráfica Rápida',
+            icon: '✨',
+            description: 'Serviços rápidos',
+            products: [
+                { name: 'IMPRESSAO PT/BR', description: '', price: 'R$ 2,00/un', image: 'img/camiseta-estampada.jpg' },
+                { name: 'IMPRESSAO COLORIDA', description: '', price: 'R$ 2,50/un', image: 'img/bone-estampado.jpg' },
+                { name: 'XEROX PT-BR', description: '', price: 'R$ 1,00/un', image: 'img/caneca-personalizada.jpg' },
+                { name: 'XEROX COLORIDA', description: '', price: 'R$ 1,50/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'ARTE CURRICULO', description: '', price: 'R$ 5,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'SCANNER DOCUMENTO 1 PAGINA', description: '', price: 'R$ 1,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'PLASTIFICAÇAO IDENTIDADE', description: '', price: 'R$ 2,50/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'PLASTIFICAÇAO TITULO', description: '', price: 'R$ 2,50/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'PLASTIFICAÇAO FOLHA INTEIRA', description: '', price: 'R$ 4,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'CONTRATO DE VENDA/ALUGUEL JA IMPRESSO', description: '', price: 'R$ 10,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'IMPRESSAO TERMICA', description: '', price: 'R$ 0,90/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'IMPRESSAO PAPEL ADESIVO', description: '', price: 'R$ 6,00/un', image: 'img/tecido-estampado.jpg' }
+            ]
         }
     ]
 };
