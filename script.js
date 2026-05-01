@@ -7,15 +7,15 @@ const catalogData = {
             icon: '📄💳',
             description: 'Produtos para divulgação rápida.',
             products: [
-                { name: 'Panfletos 10×14', description: '1.000 UN', price: 'R$ 124,99/1000un', image: 'img/teste.png' },
-                { name: 'Panfletos 14×20', description: '1.000 UN', price: 'R$ 234,99/1000un', image: 'img/teste.png' },
-                { name: 'Panfletos 7×10', description: '5.000  UN', price: '169,99/5000un', image: 'img/teste.png' },
-                { name: 'Panfletos 10×14', description: '2.500 UN', price: 'R$ 129,99/2.500un', image: 'img/teste.png' },
-                { name: 'Panfletos 14×20', description: '2.500 UN', price: 'R$ 274,99/2.500un', image: 'img/teste.png' },
-                { name: 'Cartão de visita couchê 300g total frente', description: '500 UN', price: 'R$ 94,99/500un', image: 'img/teste.png' },
-                { name: 'Cartão de visita couchê 300g total frente', description: '1.000 UN', price: 'R$ 104,99/1.000un', image: 'img/teste.png' },
-                { name: 'Cartão de visita couchê 300g frente e verso laminação fosca', description: '500 UN', price: 'R$ 129,99/500un', image: 'img/teste.png' },
-                { name: 'Cartão de visita couchê 300g frente e verso laminação fosca', description: '1.000 UN', price: 'R$ 169,99/1.000un', image: 'img/teste.png' }
+                { name: 'Panfletos 10×14', description: '1.000 UN', price: 'R$ 124,99/1000un', image: 'img/panfletos.png' },
+                { name: 'Panfletos 14×20', description: '1.000 UN', price: 'R$ 234,99/1000un', image: 'img/panfletos.png' },
+                { name: 'Panfletos 7×10', description: '5.000  UN', price: '169,99/5000un', image: 'img/panfletos.png' },
+                { name: 'Panfletos 10×14', description: '2.500 UN', price: 'R$ 129,99/2.500un', image: 'img/panfletos.png' },
+                { name: 'Panfletos 14×20', description: '2.500 UN', price: 'R$ 274,99/2.500un', image: 'img/panfletos.png' },
+                { name: 'Cartão de visita couchê 300g total frente', description: '500 UN', price: 'R$ 94,99/500un', image: 'img/cartoesdevisita.png' },
+                { name: 'Cartão de visita couchê 300g total frente', description: '1.000 UN', price: 'R$ 104,99/1.000un', image: 'img/cartoesdevisita.png' },
+                { name: 'Cartão de visita couchê 300g frente e verso laminação fosca', description: '500 UN', price: 'R$ 129,99/500un', image: 'img/cartoesdevisita.png' },
+                { name: 'Cartão de visita couchê 300g frente e verso laminação fosca', description: '1.000 UN', price: 'R$ 169,99/1.000un', image: 'img/cartoesdevisita.png' }
             ]
         },
         {
