@@ -4,7 +4,7 @@ const catalogData = {
         {
             id: 'cartoes',
             name: 'Panfletos / Cartões',
-            icon: '📄💳',
+            backgroundImage: 'img/categoriacartaopanfleto.png',
             description: 'Produtos para divulgação rápida.',
             products: [
                 { name: 'Panfletos 10×14', description: '1.000 UN', price: 'R$ 124,99/1000un', image: 'img/panfletos.png' },
@@ -21,7 +21,7 @@ const catalogData = {
         {
             id: 'folders',
             name: 'Sublimação',
-            icon: '☕',
+            backgroundImage: 'img/bg-sublimacao.jpg',
             description: 'Sublimações em geral',
             products: [
                 { name: 'Caneca sublimada cerâmica', description: '', price: 'R$ 24,99/un', image: 'img/canecassublimadas.png' },
@@ -35,7 +35,7 @@ const catalogData = {
         {
             id: 'banners',
             name: 'Fotos',
-            icon: '️📷',
+            backgroundImage: 'img/bg-fotos.jpg',
             description: 'Eternize memórias.',
             products: [
                 { name: 'Foto 20×27 1 UN', description: '', price: 'R$ 9,99', image: 'img/foto1un.png' },
@@ -48,7 +48,7 @@ const catalogData = {
         {
             id: 'cadernos',
             name: 'Banners/Faixas',
-            icon: '📃',
+            backgroundImage: 'img/bg-banners.jpg',
             description: 'Comunicação visual',
             products: [
                 { name: 'Banner 50×50', description: '', price: 'R$ 19,99/un', image: 'img/teste.png' },
@@ -65,7 +65,7 @@ const catalogData = {
         {
             id: 'embalagens',
             name: 'Adesivos',
-            icon: '📦',
+            backgroundImage: 'img/bg-adesivos.jpg',
             description: 'Adesivos vinil',
             products: [
                 { name: 'Caixa Pequena', description: '10x10x5cm, papelão 300g', price: 'R$ 2,50/un', image: 'img/caixa-pequena.jpg' },
@@ -77,7 +77,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Presentes personalizados casal',
-            icon: '💞',
+            backgroundImage: 'img/bg-casal.jpg',
             description: 'Torne cada momento especial',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -89,7 +89,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Cortadores/carimbos biscoito',
-            icon: '🍪',
+            backgroundImage: 'img/bg-biscoito.jpg',
             description: 'Alavanque sua criatividade na cozinha',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -101,7 +101,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Brindes personalizados',
-            icon: '🎁',
+            backgroundImage: 'img/bg-brindes.jpg',
             description: 'Brindes para todas as ocasiões',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -113,7 +113,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Personalizados para festas',
-            icon: '🎉',
+            backgroundImage: 'img/bg-festas.jpg',
             description: 'Personalizados completos',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -125,7 +125,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Personalizados para Eventos',
-            icon: '✨',
+            backgroundImage: 'img/bg-eventos.jpg',
             description: 'Use a criatividade no seu evento',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -137,7 +137,7 @@ const catalogData = {
         {
             id: 'graficarapida',
             name: 'Serviços Gráfica Rápida',
-            icon: '✨',
+            backgroundImage: 'img/bg-grafica.jpg',
             description: 'Serviços rápidos',
             products: [
                 { name: 'IMPRESSAO PT/BR', description: '', price: 'R$ 2,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -161,12 +161,17 @@ const catalogData = {
 function renderSessions() {
     const grid = document.getElementById('sessionsGrid');
     if (!grid) return;
-    
+
     grid.innerHTML = catalogData.sessions.map(session => `
-        <div class="session-card" onclick="openSession('${session.id}')">
-            <div class="icon">${session.icon}</div>
-            <h3>${session.name}</h3>
-            <p>${session.description}</p>
+        <div class="session-card"
+             onclick="openSession('${session.id}')"
+             style="background-image: url('${session.backgroundImage || ''}')">
+
+            <div class="session-overlay">
+                <h3>${session.name}</h3>
+                <p>${session.description}</p>
+            </div>
+
         </div>
     `).join('');
 }
@@ -178,28 +183,38 @@ function openSession(sessionId) {
         window.location.hash = '#' + sessionId;
         return; // Aguardar o evento hashchange para evitar duplicidade
     }
+
     const session = catalogData.sessions.find(s => s.id === sessionId);
     if (!session) return;
+
     document.querySelector('.sessions-section').style.display = 'none';
+
     let productsView = document.getElementById('productsView');
+
     if (!productsView) {
         productsView = document.createElement('div');
         productsView.id = 'productsView';
         productsView.className = 'products-view';
         document.querySelector('main').appendChild(productsView);
     }
+
     productsView.innerHTML = `
         <button class="back-button" onclick="closeProducts()">
             ← Voltar às Sessões
         </button>
-        <h2>${session.icon} ${session.name}</h2>
+
+        <h2>${session.name}</h2>
         <p class="subtitle">${session.description}</p>
+
         <div class="products-grid">
             ${session.products.map(product => `
                 <div class="product-card">
                     <div class="product-image">
-                        ${product.image ? `<img src="${product.image}" alt="${product.name}" style="width:100%;height:100%;object-fit:cover;">` : '🖼️'}
+                        ${product.image
+                            ? `<img src="${product.image}" alt="${product.name}" style="width:100%;height:100%;object-fit:cover;">`
+                            : '🖼️'}
                     </div>
+
                     <div class="product-info">
                         <h4>${product.name}</h4>
                         <p class="description">${product.description}</p>
@@ -209,6 +224,7 @@ function openSession(sessionId) {
             `).join('')}
         </div>
     `;
+
     productsView.classList.add('active');
     productsView.style.display = 'block';
 }
@@ -219,20 +235,25 @@ function closeProducts() {
     if (window.location.hash) {
         history.pushState('', document.title, window.location.pathname + window.location.search);
     }
+
     const productsView = document.getElementById('productsView');
+
     if (productsView) {
         productsView.classList.remove('active');
         productsView.style.display = 'none';
     }
+
     document.querySelector('.sessions-section').style.display = 'block';
 }
 
 // Inicializar
 document.addEventListener('DOMContentLoaded', () => {
     renderSessions();
+
     // Se houver hash na URL ao carregar, abrir a seção correspondente
     if (window.location.hash) {
         const sessionId = window.location.hash.replace('#', '');
+
         if (catalogData.sessions.some(s => s.id === sessionId)) {
             openSession(sessionId);
         }
@@ -242,6 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Ouve mudanças no hash para navegação direta
 window.addEventListener('hashchange', () => {
     const sessionId = window.location.hash.replace('#', '');
+
     if (catalogData.sessions.some(s => s.id === sessionId)) {
         openSession(sessionId);
     } else {
