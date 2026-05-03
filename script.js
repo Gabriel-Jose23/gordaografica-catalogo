@@ -51,15 +51,15 @@ const catalogData = {
             backgroundImage: 'img/bg-banners.jpg',
             description: 'Comunicação visual',
             products: [
-                { name: 'Banner 50×50', description: '', price: 'R$ 19,99/un', image: 'img/teste.png' },
-                { name: 'Banner 70×70', description: '', price: 'R$ 29,99/un', image: 'img/teste.png' },
-                { name: 'Banner 70×90', description: '', price: 'R$ 34,99/un', image: 'img/teste.png' },
-                { name: 'Banner 90×90', description: '', price: 'R$ 44,99/un', image: 'img/teste.png' },
-                { name: 'Banner 90×1,10', description: '', price: 'R$ 59,99/un', image: 'img/teste.png' },
-                { name: 'Banner 1,10×1,10', description: '', price: 'R$ 69,99/un', image: 'img/teste.png' },
-                { name: 'Banner 1,10×1,30', description: '', price: 'R$ 84,99/un', image: 'img/teste.png' },
-                { name: 'Banner 1,30×1,50', description: '', price: 'R$ 114,99/un', image: 'img/teste.png' },
-                { name: 'Banner tamanho personalizado', description: '', price: 'R$ 0,00 Consultar o valor no whatsapp', image: 'img/teste.png' }
+                { name: 'Banner 50×50', description: '', price: 'R$ 19,99/un', image: 'img/banners.png' },
+                { name: 'Banner 70×70', description: '', price: 'R$ 29,99/un', image: 'img/banners.png' },
+                { name: 'Banner 70×90', description: '', price: 'R$ 34,99/un', image: 'img/banners.png' },
+                { name: 'Banner 90×90', description: '', price: 'R$ 44,99/un', image: 'img/banners.png' },
+                { name: 'Banner 90×1,10', description: '', price: 'R$ 59,99/un', image: 'img/banners.png' },
+                { name: 'Banner 1,10×1,10', description: '', price: 'R$ 69,99/un', image: 'img/banners.png' },
+                { name: 'Banner 1,10×1,30', description: '', price: 'R$ 84,99/un', image: 'img/banners.png' },
+                { name: 'Banner 1,30×1,50', description: '', price: 'R$ 114,99/un', image: 'img/banners.png' },
+                { name: 'Banner tamanho personalizado', description: '', price: 'R$ 0,00 Consultar o valor no whatsapp', image: 'img/banners.png' }
             ]
         },
         {
