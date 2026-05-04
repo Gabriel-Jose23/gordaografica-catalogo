@@ -4,7 +4,7 @@ const catalogData = {
         {
             id: 'cartoes',
             name: 'Panfletos / Cartões',
-            backgroundImage: 'img/categoriacartaopanfleto.png',
+            backgroundImage: 'img/cartaodevisitaepanfletoscapa.jpeg',
             description: 'Produtos para divulgação rápida.',
             products: [
                 { name: 'Panfletos 10×14', description: '1.000 UN', price: 'R$ 124,99/1000un', image: 'img/panfletos.png' },
@@ -21,7 +21,7 @@ const catalogData = {
         {
             id: 'folders',
             name: 'Sublimação',
-            backgroundImage: 'img/bg-sublimacao.jpg',
+            backgroundImage: 'img/sublimaçãocapa.jpeg',
             description: 'Sublimações em geral',
             products: [
                 { name: 'Caneca sublimada cerâmica', description: '', price: 'R$ 24,99/un', image: 'img/canecassublimadas.png' },
@@ -35,7 +35,7 @@ const catalogData = {
         {
             id: 'banners',
             name: 'Fotos',
-            backgroundImage: 'img/bg-fotos.jpg',
+            backgroundImage: 'img/fotoscapa.jpeg',
             description: 'Eternize memórias.',
             products: [
                 { name: 'Foto 20×27 1 UN', description: '', price: 'R$ 9,99', image: 'img/foto1un.png' },
@@ -48,7 +48,7 @@ const catalogData = {
         {
             id: 'cadernos',
             name: 'Banners/Faixas',
-            backgroundImage: 'img/bg-banners.jpg',
+            backgroundImage: 'img/bannersefaixascapa.jpeg',
             description: 'Comunicação visual',
             products: [
                 { name: 'Banner 50×50', description: '', price: 'R$ 19,99/un', image: 'img/banners.png' },
@@ -65,7 +65,7 @@ const catalogData = {
         {
             id: 'embalagens',
             name: 'Adesivos',
-            backgroundImage: 'img/bg-adesivos.jpg',
+            backgroundImage: 'img/adesivosdevinilfoto.jpeg',
             description: 'Adesivos vinil',
             products: [
                 { name: 'Caixa Pequena', description: '10x10x5cm, papelão 300g', price: 'R$ 2,50/un', image: 'img/caixa-pequena.jpg' },
@@ -77,7 +77,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Presentes personalizados casal',
-            backgroundImage: 'img/bg-casal.jpg',
+            backgroundImage: 'img/presentespersonalizadoscasalfoto.jpeg',
             description: 'Torne cada momento especial',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -88,8 +88,8 @@ const catalogData = {
         },
         {
             id: 'serigrafia',
-            name: 'Cortadores/carimbos biscoito',
-            backgroundImage: 'img/bg-biscoito.jpg',
+            name: 'Cortadores de biscoito (Animais)',
+            backgroundImage: 'img/cortadoresdebiscoitoanimaisfoto.jpeg',
             description: 'Alavanque sua criatividade na cozinha',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -101,7 +101,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Brindes personalizados',
-            backgroundImage: 'img/bg-brindes.jpg',
+            backgroundImage: 'img/brindespersonalizadosfoto.jpeg',
             description: 'Brindes para todas as ocasiões',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -113,7 +113,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Personalizados para festas',
-            backgroundImage: 'img/bg-festas.jpg',
+            backgroundImage: 'img/personalizadosparafestasfoto.jpeg',
             description: 'Personalizados completos',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -125,7 +125,7 @@ const catalogData = {
         {
             id: 'serigrafia',
             name: 'Personalizados para Eventos',
-            backgroundImage: 'img/bg-eventos.jpg',
+            backgroundImage: 'img/personalizadosparaeventosfoto.jpeg',
             description: 'Use a criatividade no seu evento',
             products: [
                 { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
@@ -137,7 +137,7 @@ const catalogData = {
         {
             id: 'graficarapida',
             name: 'Serviços Gráfica Rápida',
-            backgroundImage: 'img/bg-grafica.jpg',
+            backgroundImage: 'img/serviçograficarapidafoto.jpeg',
             description: 'Serviços rápidos',
             products: [
                 { name: 'IMPRESSAO PT/BR', description: '', price: 'R$ 2,00/un', image: 'img/camiseta-estampada.jpg' },
