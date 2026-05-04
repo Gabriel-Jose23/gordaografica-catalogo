@@ -15,9 +15,9 @@
 
 :root {
     /* cores base */
-    --primary: #181818; /* preto escuro */
-    --secondary: #ff9800; /* laranja */
-    --accent: #ffd600; /* amarelo */
+    --primary: #181818;
+    --secondary: #ff9800;
+    --accent: #ffd600;
 
     /* textos HOME */
     --home-title: #ffffff;
@@ -57,46 +57,40 @@ body {
 }
 
 /* =========================
-   HEADER HERO
+   HEADER HERO (AGORA COM IMG)
 ========================= */
 .hero-header {
-    width: 100%;
-    height: 410px;
-
-    background-image: url('img/bannert5.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-color: #000;
-
     position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: var(--shadow);
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
 }
 
-.header-overlay {
+/* imagem do banner */
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* camada para conteúdo futuro (botões, etc) */
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    text-align: center;
-    padding: 40px 20px;
+    pointer-events: none; /* evita bloquear clique no futuro */
 }
 
-.hero-header h1 {
-    color: var(--text-light);
-    font-size: 3rem;
-    margin-top: 10px;
+/* se quiser ativar clique nos botões depois */
+.header-content * {
+    pointer-events: auto;
 }
 
 /* =========================
@@ -179,7 +173,7 @@ body {
 }
 
 /* =========================
-   VIEW PRODUTOS (HOOK)
+   VIEW PRODUTOS
 ========================= */
 .products-view {
     display: none;
@@ -190,7 +184,6 @@ body {
     display: block;
 }
 
-/* 🔥 TÍTULO DA CATEGORIA (SEU PROBLEMA RESOLVIDO) */
 .products-view h2 {
     color: var(--category-title);
 }
@@ -271,7 +264,6 @@ body {
 }
 
 .product-info h4 {
-    color: var(--text-title);
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
@@ -305,15 +297,6 @@ footer {
    RESPONSIVO
 ========================= */
 @media (max-width: 768px) {
-
-    .hero-header {
-        min-height: 260px;
-        background-position: center;
-    }
-
-    .hero-header h1 {
-        font-size: 2rem;
-    }
 
     .logo-header {
         max-width: 90px;
