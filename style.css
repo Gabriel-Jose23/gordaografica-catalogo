@@ -14,22 +14,18 @@
 }
 
 :root {
-    /* cores base */
     --primary: #181818;
     --secondary: #ff9800;
     --accent: #ffd600;
 
-    /* textos HOME */
     --home-title: #ffffff;
     --text-subtitle: #ffffff;
     --text-body: #222;
     --text-muted: #666;
     --text-light: #ffffff;
 
-    /* textos CATEGORY (HOOK) */
     --category-title: #ffffff;
 
-    /* utilitários */
     --header-gradient: #ffd600;
     --price-color: #000000;
     --light: #fff8e1;
@@ -57,40 +53,74 @@ body {
 }
 
 /* =========================
-   HEADER HERO (AGORA COM IMG)
+   HEADER HERO
 ========================= */
 .hero-header {
     position: relative;
     width: 100%;
     overflow: hidden;
     background-color: #000;
+    margin-bottom: 20px;
 }
 
-/* imagem do banner */
 .banner-img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* camada para conteúdo futuro (botões, etc) */
-.header-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
+/* =========================
+   BOTÕES SOCIAIS
+========================= */
+.social-bar {
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 15px;
 
-    pointer-events: none; /* evita bloquear clique no futuro */
+    margin: 35px 0 15px 0;
 }
 
-/* se quiser ativar clique nos botões depois */
-.header-content * {
-    pointer-events: auto;
+/* botão base */
+.btn {
+    display: flex; /* 👈 alinha ícone + texto */
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* ÍCONE PNG */
+.icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* WhatsApp */
+.btn.whatsapp {
+    background: #25d366;
+}
+
+.btn.whatsapp:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* Instagram */
+.btn.instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.btn.instagram:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 /* =========================
@@ -286,9 +316,7 @@ body {
 footer {
     background: var(--primary);
     color: white;
-
     text-align: center;
-
     padding: 20px 0;
     margin-top: 50px;
 }
