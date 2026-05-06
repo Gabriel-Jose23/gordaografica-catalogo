@@ -2,7 +2,7 @@
 const catalogData = {
     sessions: [
         {
-            id: 'cartoes',
+            id: 'cartoes_e_panfletos',
             name: 'Panfletos / Cartões',
             backgroundImage: 'img/cartaodevisitaepanfletoscapa.jpeg',
             description: 'Produtos para divulgação rápida.',
@@ -19,7 +19,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'folders',
+            id: 'sublimacao',
             name: 'Sublimação',
             backgroundImage: 'img/sublimaçãocapa.jpeg',
             description: 'Sublimações em geral',
@@ -33,7 +33,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'banners',
+            id: 'fotos',
             name: 'Fotos',
             backgroundImage: 'img/fotoscapa.jpeg',
             description: 'Eternize memórias.',
@@ -46,7 +46,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'cadernos',
+            id: 'banners_e_faixas',
             name: 'Banners/Faixas',
             backgroundImage: 'img/bannersefaixascapa.jpeg',
             description: 'Comunicação visual',
@@ -63,7 +63,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'embalagens',
+            id: 'adesivos',
             name: 'Adesivos',
             backgroundImage: 'img/adesivosdevinilfoto.jpeg',
             description: 'Adesivos vinil',
@@ -75,7 +75,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'serigrafia',
+            id: 'persentes_personalizados_casal',
             name: 'Presentes personalizados casal',
             backgroundImage: 'img/presentespersonalizadoscasalfoto.jpeg',
             description: 'Torne cada momento especial',
@@ -90,7 +90,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'serigrafia',
+            id: 'cortadores_de_biscoito_animais',
             name: 'Cortadores de biscoito (Animais)',
             backgroundImage: 'img/cortadoresdebiscoitoanimaisfoto.jpeg',
             description: 'Alavanque sua criatividade na cozinha',
@@ -102,7 +102,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'serigrafia',
+            id: 'brindes_personalizados',
             name: 'Brindes personalizados',
             backgroundImage: 'img/brindespersonalizadosfoto.jpeg',
             description: 'Brindes para todas as ocasiões',
@@ -114,7 +114,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'serigrafia',
+            id: 'brindes_personalizados_para_festas',
             name: 'Personalizados para festas',
             backgroundImage: 'img/personalizadosparafestasfoto.jpeg',
             description: 'Personalizados completos',
@@ -126,7 +126,7 @@ const catalogData = {
             ]
         },
         {
-            id: 'serigrafia',
+            id: 'personalizados_para_eventos',
             name: 'Personalizados para Eventos',
             backgroundImage: 'img/personalizadosparaeventosfoto.jpeg',
             description: 'Use a criatividade no seu evento',
@@ -138,23 +138,22 @@ const catalogData = {
             ]
         },
         {
-            id: 'graficarapida',
+            id: 'servicos_grafica_rapida',
             name: 'Serviços Gráfica Rápida',
             backgroundImage: 'img/serviçograficarapidafoto.jpeg',
             description: 'Serviços rápidos',
             products: [
-                { name: 'IMPRESSAO PT/BR', description: '', price: 'R$ 2,00/un', image: 'img/camiseta-estampada.jpg' },
-                { name: 'IMPRESSAO COLORIDA', description: '', price: 'R$ 2,50/un', image: 'img/bone-estampado.jpg' },
+                { name: 'IMPRESSÃO PT/BR', description: '', price: 'R$ 2,00/un', image: 'img/camiseta-estampada.jpg' },
+                { name: 'IMPRESSÃO COLORIDA', description: '', price: 'R$ 2,50/un', image: 'img/bone-estampado.jpg' },
                 { name: 'XEROX PT-BR', description: '', price: 'R$ 1,00/un', image: 'img/caneca-personalizada.jpg' },
                 { name: 'XEROX COLORIDA', description: '', price: 'R$ 1,50/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'ARTE CURRICULO', description: '', price: 'R$ 5,00/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'SCANNER DOCUMENTO 1 PAGINA', description: '', price: 'R$ 1,00/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'PLASTIFICAÇAO IDENTIDADE', description: '', price: 'R$ 2,50/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'PLASTIFICAÇAO TITULO', description: '', price: 'R$ 2,50/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'PLASTIFICAÇAO FOLHA INTEIRA', description: '', price: 'R$ 4,00/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'CONTRATO DE VENDA/ALUGUEL JA IMPRESSO', description: '', price: 'R$ 10,00/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'IMPRESSAO TERMICA', description: '', price: 'R$ 0,90/un', image: 'img/tecido-estampado.jpg' },
-                { name: 'IMPRESSAO PAPEL ADESIVO', description: '', price: 'R$ 6,00/un', image: 'img/tecido-estampado.jpg' }
+                { name: 'ARTE CURRÍCULO', description: '', price: 'R$ 5,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'SCANNER DOCUMENTO 1 PÁGINA', description: '', price: 'R$ 1,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'PLASTIFICAÇÃO IDENTIDADE', description: '', price: 'R$ 2,50/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'PLASTIFICAÇÃO TITULO', description: '', price: 'R$ 2,50/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'PLASTIFICAÇÃO FOLHA INTEIRA', description: '', price: 'R$ 4,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'CONTRATO DE VENDA/ALUGUEL JÁ IMPRESSO', description: '', price: 'R$ 10,00/un', image: 'img/tecido-estampado.jpg' },
+                { name: 'IMPRESSÃO TÉRMICA', description: '', price: 'R$ 0,90/un', image: 'img/tecido-estampado.jpg' }
             ]
         }
     ]
