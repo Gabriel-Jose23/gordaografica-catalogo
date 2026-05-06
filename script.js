@@ -80,10 +80,13 @@ const catalogData = {
             backgroundImage: 'img/presentespersonalizadoscasalfoto.jpeg',
             description: 'Torne cada momento especial',
             products: [
-                { name: 'Camiseta Estampada', description: 'Silk 1 cor, cotton', price: 'R$ 15,00/un', image: 'img/camiseta-estampada.jpg' },
-                { name: 'Boné Estampado', description: 'Silk 1 cor, frente', price: 'R$ 25,00/un', image: 'img/bone-estampado.jpg' },
-                { name: 'Caneca Personalizada', description: 'Sublimação, corescheia', price: 'R$ 22,00/un', image: 'img/caneca-personalizada.jpg' },
-                { name: 'Tecido Estampado', description: 'Silk metro, cotton', price: 'R$ 30,00/m', image: 'img/tecido-estampado.jpg' }
+                { name: 'Moldura Casal Data Comemorativa', description: 'Obs: “Apenas a impressão R$ 8,00”', price: 'R$ 32,99/un', image: 'img/molduracasaldatacomemorativa.jpeg' },
+                { name: 'Moldura Spotify Personalizada', description: 'Obs: “Apenas a impressão R$ 8,00”', price: 'R$ 32,00/un', image: 'img/molduraspotifypersonalizada.jpeg' },
+                { name: 'Envelope Romântico Personalizado ', description: '', price: 'R$ 17,99/un', image: 'img/enveloperomanticopersonalizado.jpeg' },
+                { name: 'Caixa MDF Sanfona de Fotos', description: '', price: 'R$ 19,99/un', image: 'img/caixamdfsanfonadefotos.jpeg' },
+                { name: 'Argola de Fotos (Motivos para Te Amar)', description: '', price: 'R$ 14,99/un', image: 'img/argoladefotos.jpeg' },
+                { name: 'Varal de Fotos Personalizadas', description: 'Obs: 2 varais com 5 fotos cada', price: 'R$ 14,99/un', image: 'img/varaldefotospersonalizadas.jpeg' },
+                { name: 'Quebra-Cabeça Personalizado', description: '', price: 'R$ 24,99/un', image: 'img/quebracabeçacasalpersonalizado.jpeg' }
             ]
         },
         {
